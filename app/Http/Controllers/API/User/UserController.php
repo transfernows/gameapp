@@ -15,9 +15,9 @@ class UserController extends BaseController
  
     public function index()
     {
-        echo 1;
-        $products = User::all();
-        print_r($products);
+        
+        $dataClass = User::all();
+        return $this->sendResponse(ProductResource::collection($dataClass), 'User retrieved successfully.');
     }
 
     /**
