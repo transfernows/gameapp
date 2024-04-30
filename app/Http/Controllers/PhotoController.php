@@ -1,18 +1,14 @@
 <?php
-   
-   
-namespace App\Http\Controllers\API\User;
-   
+
+namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
-use App\Http\Controllers\API\BaseController as BaseController;
-use App\Models\Product;
-use Validator;
-use App\Http\Resources\ProductResource;
-use Illuminate\Http\JsonResponse;
-   
-class UserController extends BaseController
+
+class PhotoController extends Controller
 {
- 
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
         //

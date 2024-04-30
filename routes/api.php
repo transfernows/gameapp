@@ -6,7 +6,6 @@ use App\Http\Controllers\API\RegisterController;
 use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\User\UserController;
 
-Route::get('/lookma', 'TestController@test');
 
 Route::controller(RegisterController::class)->group(function () {
     Route::post('register', 'register');
@@ -14,30 +13,8 @@ Route::controller(RegisterController::class)->group(function () {
 });
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::resource('user/balance', UserController::class);
-    Route::resource('user/activites', UserController::class);
-    Route::resource('user/details', UserController::class);
+    Route::resource('user', UserController::class);
 });
-
-Route::middleware('auth:sanctum')->group(function () {
-    Route::resource('bonus/categori', UserController::class);
-    Route::resource('bonus/requests', UserController::class);
-    Route::resource('bonus/logsa', UserController::class);
-});
-
-
-Route::middleware('auth:sanctum')->group(function () {
-    Route::resource('blog/category', UserController::class);
-    Route::resource('blog/content', UserController::class);
-    Route::resource('bonus/settings', UserController::class);
-});
-
-Route::middleware('auth:sanctum')->group(function () {
-    Route::resource('game/provider', UserController::class);
-    Route::resource('game/list', UserController::class);
-    Route::resource('game/category', UserController::class);
-});
- 
 
 
 
