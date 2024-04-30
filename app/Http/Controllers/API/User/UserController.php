@@ -33,7 +33,7 @@ class UserController extends BaseController
      */
     public function store(Request $request)
     {
-        //
+        // 
     }
 
     /**
@@ -41,6 +41,7 @@ class UserController extends BaseController
      */
  public function show($id): JsonResponse
     {
+     
         $product = User::find($id);
   
         if (is_null($product)) {
@@ -48,6 +49,7 @@ class UserController extends BaseController
         }
    
         return $this->sendResponse(new UserResource($product), 'User retrieved successfully.');
+        
     }
 
     /**
