@@ -5,7 +5,7 @@ namespace App\Http\Controllers\API\User;
    
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
-use App\Models\Product;
+use App\Models\User;
 use Validator;
 use App\Http\Resources\ProductResource;
 use Illuminate\Http\JsonResponse;
@@ -15,7 +15,9 @@ class UserController extends BaseController
  
     public function index()
     {
-        //
+        echo 1;
+        $products = User::all();
+        print_r($products);
     }
 
     /**
