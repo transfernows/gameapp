@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '1a62a8e01f8734f9e41f3b47ded0b72da9741773',
+        'reference' => '7958cf5f35914ade80fbd9b9a7f893c92697111c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -382,7 +382,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '1a62a8e01f8734f9e41f3b47ded0b72da9741773',
+            'reference' => '7958cf5f35914ade80fbd9b9a7f893c92697111c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -654,6 +654,15 @@
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'predis/predis' => array(
+            'pretty_version' => 'v2.2.2',
+            'version' => '2.2.2.0',
+            'reference' => 'b1d3255ed9ad4d7254f9f9bba386c99f4bb983d1',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../predis/predis',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'psr/clock' => array(
             'pretty_version' => '1.0.0',
