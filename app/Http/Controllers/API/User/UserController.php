@@ -59,6 +59,10 @@ class UserController extends BaseController
     {
         //
     }
+    
+    public function clears($param) {
+        
+    }
 
     /**
      * Update the specified resource in storage.
