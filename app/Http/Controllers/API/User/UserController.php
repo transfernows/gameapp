@@ -47,7 +47,7 @@ class UserController extends BaseController
             return $this->sendError('Product not found.');
         }
    
-        return $this->sendResponse(new UserResource($product), 'user retrieved successfully.');
+        return $this->sendResponse(new UserResource($product), 'User retrieved successfully.');
     }
 
     /**
@@ -71,6 +71,8 @@ class UserController extends BaseController
      */
     public function destroy(string $id)
     {
-        //
+        $id->delete();
+   
+        return $this->sendResponse([], 'Product deleted successfully.');
     }
 }
