@@ -11,8 +11,11 @@ use Illuminate\Http\JsonResponse;
 
 class UserController extends BaseController {
 
+    /**
+     * 
+     * @return type
+     */
     public function index() {
-
         $dataClass = User::all();
         return $this->sendResponse(UserResource::collection($dataClass), 'User retrieved successfully.');
     }
