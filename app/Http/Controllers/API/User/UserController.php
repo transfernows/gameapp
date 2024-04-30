@@ -39,9 +39,15 @@ class UserController extends BaseController
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+ public function show($id): JsonResponse
     {
-        //
+        $product = User::find($id);
+  
+        if (is_null($product)) {
+            return $this->sendError('Product not found.');
+        }
+   
+        return $this->sendResponse(new UserResource($product), 'user retrieved successfully.');
     }
 
     /**
