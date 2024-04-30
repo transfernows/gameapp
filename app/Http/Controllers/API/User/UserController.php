@@ -33,7 +33,7 @@ class UserController extends BaseController
      */
     public function store(Request $request)
     {
-        // 
+              $input = $request->all();
     }
 
     /**
