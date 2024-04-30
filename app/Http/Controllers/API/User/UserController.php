@@ -55,6 +55,10 @@ class UserController extends BaseController {
         //
     }
 
+    /**
+     * 
+     * @param type $param
+     */
     public function clears($param) {
         
     }
