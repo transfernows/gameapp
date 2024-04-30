@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
 use App\Models\User;
 use Validator;
-use App\Http\Resources\ProductResource;
+use App\Http\Resources\UserResource;
 use Illuminate\Http\JsonResponse;
    
 class UserController extends BaseController
@@ -17,7 +17,7 @@ class UserController extends BaseController
     {
         
         $dataClass = User::all();
-        return $this->sendResponse(ProductResource::collection($dataClass), 'User retrieved successfully.');
+        return $this->sendResponse(UserResource::collection($dataClass), 'User retrieved successfully.');
     }
 
     /**
