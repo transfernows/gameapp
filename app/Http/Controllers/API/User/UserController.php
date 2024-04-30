@@ -65,7 +65,7 @@ class UserController extends BaseController
      */
     public function update(Request $request, string $id)
     {
-        //
+        $input = $request->all();
     }
 
     /**
