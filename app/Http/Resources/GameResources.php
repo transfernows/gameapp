@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class BlogResource extends JsonResource
+class GameResources extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -17,6 +17,3 @@ class BlogResource extends JsonResource
         return parent::toArray($request);
     }
 }
-
-
-
