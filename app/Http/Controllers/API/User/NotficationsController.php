@@ -2,7 +2,7 @@
 
 <?php
 
-namespace App\Http\Controllers\API\User;
+namespace App\Http\Controllers\API\NotficationsController;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
