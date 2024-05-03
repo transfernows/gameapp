@@ -11,15 +11,16 @@ use Validator;
 use App\Http\Resources\UserNotficationsResource;
 use Illuminate\Http\JsonResponse;
 
-class UserNotfications extends BaseController {
+class NotficationsController extends BaseController {
 
     /**
      * 
      * @return type
      */
     public function index() {
-        $dataClass = User::all();
-        return $this->sendResponse(UserResource::collection($dataClass), 'User retrieved successfully.');
+        $dataClass = User_notifications::all();
+        print_r($dataClass);
+       // return $this->sendResponse(UserResource::collection($dataClass), 'User retrieved successfully.');
     }
 
     /**

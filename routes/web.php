@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/tests', [TestController::class, 'index']);
+Route::get('/notfication', [TestController::class, 'index']);
