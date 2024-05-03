@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class user_notifications extends Model
 {
+    
+    protected $table = 'user_notfications';
     use HasFactory;
 }
