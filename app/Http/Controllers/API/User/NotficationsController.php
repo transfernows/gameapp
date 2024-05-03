@@ -6,7 +6,7 @@ namespace App\Http\Controllers\API\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
-use App\Models\user_notifications;
+use App\Models\User_notifications;
 use Validator;
 use App\Http\Resources\UserNotficationsResource;
 use Illuminate\Http\JsonResponse;
